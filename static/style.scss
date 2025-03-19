@@ -1,0 +1,93 @@
+//colour variables
+
+$primary_colour:rgb(77, 79, 223);
+$primary_hover_colour: thistle;
+$success_colour: rgb(72, 144, 146);
+$success_hover_colour: rgb(120, 171, 212);
+$title_colour:rgba(236, 231, 219, 0.89);
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    padding: 40px;
+    background-color: $title_colour;
+}   
+
+.content{
+    max-width: 800px;
+    margin:auto ;
+    padding: 20px;
+    background-color:rgb(197, 234, 243) ;
+    border-radius: 10px ;
+    box-shadow: 0 0 15px rgb(98, 224, 247);
+    text-align:center;
+
+    h1{
+        color: rgb(64, 127, 129); 
+    } 
+
+    h4{
+        color: bisque;
+    }
+    table{
+
+
+        width: 100%;
+        margin: auto;
+        border-collapse: separate;
+        border-radius: 10px ;
+        
+
+        th,td{
+            padding:10px;
+            border: 0px solid;
+            border-radius:10px ;
+            background-color:rgb(137, 210, 223);
+            transition: background-color 0.2s;
+
+            &:hover{ background-color:rgb(141, 216, 230) ;}
+
+            th{
+                background-color: aquamarine;
+            }
+        }
+        
+        a{
+            display: inline-block ;
+            padding:8px 16px ;
+            margin:5px ;
+            border-radius:20px ;
+            background-color:$success_colour ;
+            color:rgb(245, 233, 195) ;
+            text-decoration:none ;
+            transition:background-color 0.5s ease  ;
+
+            &:hover{
+                background-color:rgb(81, 199, 201) ;
+            }
+        }
+
+    }
+    input{
+        padding:10px;
+        margin:5px;
+        border:solid 1px ;
+        border-radius: 5px ;
+        }
+    #btn_add{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        background-color:rgb(20, 161, 74);
+        color:rgb(255, 239, 209)  ;
+        cursor: pointer ;
+        box-shadow:0px 0px 5px rgb(98, 224, 247) ;
+        transition:background-color 0.5s ;
+
+        &:hover{
+            background-color:rgb(16, 141, 70);
+        }
+    
+    }  
+
+
+
+}
